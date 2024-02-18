@@ -15,7 +15,7 @@ export const createPost = async (state: any, payload: FormData) => {
     content: payload.get("content")!.toString(),
   };
 
-  await prisma.post.create({ data }).catch((err) => {
+  await prisma.post.create({ data }).catch((err: unknown) => {
     return {
       message: "ERROR",
     };
