@@ -6,7 +6,6 @@ import { revalidatePath } from "next/cache";
 export const getPosts = async () => {
   "use server";
   const posts = await prisma.post.findMany({});
-  revalidatePath("/");
   return posts;
 };
 
@@ -22,6 +21,8 @@ export const createPost = async (state: any, payload: FormData) => {
       message: "ERROR",
     };
   });
+
+  revalidatePath("/");
 
   return {
     message: "CREATED",
