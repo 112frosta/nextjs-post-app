@@ -3,7 +3,7 @@
 import Button from "@/components/Button";
 import Link from "next/link";
 import { createPost } from "../actions";
-import { useFormState } from "react-dom";
+import { useFormState, useFormStatus } from "react-dom";
 import { useEffect } from "react";
 
 const initialState = {
@@ -60,14 +60,21 @@ export default function Page() {
           />
         </div>
         <div className="space-y-4">
-          <Button className="w-full" type="submit">
-            Zapostuj!
-          </Button>
+          <SubmitButton />
           <Link className="block text-center" href="/">
             Powrót
           </Link>
         </div>
       </div>
     </form>
+  );
+}
+
+function SubmitButton() {
+  const { pending } = useFormStatus();
+  return (
+    <Button disabled={pending} className="w-full" type="submit">
+      {pending ? "Postowanie..." : "Zapostuj!"}
+    </Button>
   );
 }
