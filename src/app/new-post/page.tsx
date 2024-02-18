@@ -15,7 +15,7 @@ export default function Page() {
 
   useEffect(() => {
     if (state.message === "CREATED") {
-      alert("Utworzono");
+      alert("Utworzono, powróć i odśwież stronę!");
     }
     if (state.message === "ERROR") {
       alert("Błąd!");
