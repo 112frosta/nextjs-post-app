@@ -19,13 +19,11 @@ export default async function Page() {
     <div className="p-10">
       <header className="flex items-center justify-between">
         <div>
-          <h1 className="text-4xl font-bold">Post here your message!</h1>
-          <h6 className="leading-10 text-slate-400">
-            Add your posts so everybody can see it!!!!
-          </h6>
+          <h1 className="text-4xl font-bold">Spostuj coś!</h1>
+          <h6 className="leading-10 text-slate-400">Dodaj swoj post!!!!</h6>
         </div>
         <Link href="/new-post">
-          <Button>Create new Post</Button>
+          <Button>Utwórz nowy Post</Button>
         </Link>
       </header>
       <main className="flex flex-wrap gap-5 py-10">
