@@ -17,8 +17,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="pl">
-      <body className={twMerge(inter.className, "h-screen bg-slate-900")}>
-        <div className="container mx-auto h-full p-5">{children}</div>
+      <body
+        className={twMerge(inter.className, "h-screen text-white bg-slate-900")}
+      >
+        <div className="container h-full p-5 pb-40 mx-auto">{children}</div>
       </body>
     </html>
   );
