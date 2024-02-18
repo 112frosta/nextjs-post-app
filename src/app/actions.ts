@@ -1,10 +1,12 @@
 "use server";
 
+import { revalidatePath } from "next/cache";
 import prisma from "../../prisma/client";
 
 export const getPosts = async () => {
   "use server";
   const posts = await prisma.post.findMany({});
+  revalidatePath("/");
   return posts;
 };
 
