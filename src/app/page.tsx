@@ -3,6 +3,15 @@ import Button from "@/components/Button";
 import Post from "@/components/Post";
 import { getPosts } from "./actions";
 
+// For vercel - prisma issue
+interface Post {
+  id: string;
+  title: string;
+  content: string;
+  author: string;
+  createdAt: Date;
+}
+
 export default async function Page() {
   const posts = await getPosts();
 
@@ -20,7 +29,7 @@ export default async function Page() {
         </Link>
       </header>
       <main className="flex flex-wrap gap-5 py-10">
-        {posts.map((post, index) => (
+        {posts.map((post: Post, index) => (
           <Post key={index} {...post} />
         ))}
       </main>
