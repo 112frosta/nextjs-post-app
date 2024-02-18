@@ -29,7 +29,7 @@ export default async function Page() {
         </Link>
       </header>
       <main className="flex flex-wrap gap-5 py-10">
-        {posts.map((post: Post, index) => (
+        {posts.map((post: Post, index: number) => (
           <Post key={index} {...post} />
         ))}
       </main>
