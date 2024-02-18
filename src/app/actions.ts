@@ -1,7 +1,7 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import prisma from "../../prisma/client";
+import { revalidatePath } from "next/cache";
 
 export const getPosts = async () => {
   "use server";
