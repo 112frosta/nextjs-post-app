@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Aplikacja Posts
 
-## Getting Started
+## Użyte Technologie
 
-First, run the development server:
+Oto technologie użyte w tym projekcie:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **React.js**: Biblioteka JavaScript do budowania interfejsów użytkownika.
+2. **Next.js**: Framework React do budowania aplikacji JavaScript.
+3. **TypeScript**: Typowany nadzbiór JavaScript, który dodaje statyczne typy.
+4. **Prisma**: Otwarte narzędzie do bazy danych.
+5. **Tailwind CSS**: Framework CSS, który pozwala szybko tworzyć niestandardowe projekty.
+6. **MongoDB**: Baza oparta o kolekcje oraz dokumenty.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalacja
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Aby zainstalować projekt, postępuj zgodnie z poniższymi krokami:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Sklonuj repozytorium: `git clone https://github.com/112frosta/nazwa_repozytorium.git`
+2. Przejdź do katalogu projektu: `nextjs-post-app`
+3. Zainstaluj zależności: `npm install`
+4. Uruchom serwer deweloperski: `npm run dev`
 
-## Learn More
+## Użycie
 
-To learn more about Next.js, take a look at the following resources:
+### Vercel (Hosting)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Strona aplikacji](https://nextjs-post-app.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Uruchomienie lokalne
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Aby korzystać z aplikacji, otwórz przeglądarkę i przejdź do `http://localhost:3000`.
