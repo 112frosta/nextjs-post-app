@@ -21,6 +21,10 @@ Aby zainstalować projekt, postępuj zgodnie z poniższymi krokami:
 4. Uruchom serwer deweloperski: `npm run dev`
 5. (Możebyć wymagane) Przed uruchomieniem serwera uruchom npx prisma generate
 
+## Zmienne środowiskowe
+
+Wymagane jest utworzenie .env.local URL do bazy danych pod nazwą ```DATABASE_URL=YOUR_DB_LINK``` 
+
 ## Użycie
 
 ### Vercel (Hosting)
@@ -42,6 +46,8 @@ Zawarte są w pliku prisma/prisma.schema
 ## Server Actions
 
 Zawarte są w pliku src/app/actions.ts
+
+
 
 ## Uwaga
 
